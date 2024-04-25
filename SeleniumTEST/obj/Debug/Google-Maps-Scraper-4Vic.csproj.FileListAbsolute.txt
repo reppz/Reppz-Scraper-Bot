@@ -332,3 +332,32 @@ C:\Users\king_\Desktop\Reppz's Scraper Bot\SeleniumTEST\bin\Debug\Newtonsoft.Jso
 C:\Users\king_\Desktop\Reppz's Scraper Bot\SeleniumTEST\bin\Debug\Newtonsoft.Json.xml
 C:\Users\king_\Desktop\Reppz's Scraper Bot\SeleniumTEST\bin\Debug\WebDriver.xml
 C:\Users\king_\Desktop\Reppz's Scraper Bot\SeleniumTEST\bin\Debug\WebDriver.Support.xml
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\SeleniumTEST.exe.config
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\SeleniumTEST.exe
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\SeleniumTEST.pdb
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\en-US\SeleniumTEST.resources.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\Newtonsoft.Json.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\SeleniumExtras.WaitHelpers.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\System.Data.SQLite.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\WebDriver.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\WebDriver.Support.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\Newtonsoft.Json.xml
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\System.Data.SQLite.xml
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\WebDriver.xml
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\bin\Debug\WebDriver.Support.xml
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\Google-Maps-Scraper-4Vic.csproj.AssemblyReference.cache
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.Form1.resources
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.Form9.resources
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.Properties.Resources.resources
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.Form1.en-US.resources
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\Google-Maps-Scraper-4Vic.csproj.GenerateResource.cache
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\Google-Maps-Scraper-4Vic.csproj.CoreCompileInputs.cache
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\en-US\SeleniumTEST.resources.dll
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\Google-M.6A5BEBAF.Up2Date
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.exe
+C:\Users\king_\Desktop\Reppz-Scraper-Bot\SeleniumTEST\obj\Debug\SeleniumTEST.pdb

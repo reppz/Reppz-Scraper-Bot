@@ -53,14 +53,13 @@ namespace SeleniumTEST
             elementim.SendKeys(search_box_text.Text);
             IWebElement searchButton = driver.FindElement(By.Id("searchbox-searchbutton"));
             searchButton.Click();
-            IWebElement ilkParagraf = driver.FindElement(By.ClassName("TFQHme"));
+            IWebElement ilkParagraf = driver.FindElement(By.ClassName("TFQHme "));
             ilkParagraf.Click();
 
-        // FİRMALARI GEZME KODU BURADA. SIRAYLA YENİ SEKMEDE AÇIP BİLGİLERİ ÇEKECEK
-        sifirla:
+        // SEARCHED RESULTS CODE HERE. IT WILL OPEN THEM ONE BY ONE IN A NEW TAB AND EXTRACT INFORMATION
             artir = 2;
           TumVeriler:
-            // SQLITE BAĞLANTISI
+            // SQLITE CONNEXION
             string conn = @"Data Source=company_data.db;Version=3;New=False";
                 string conn2 = @"Data Source=gecici.db;Version=3;";
             SQLiteConnection sqliteCon = new SQLiteConnection(conn);
