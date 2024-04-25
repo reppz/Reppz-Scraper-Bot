@@ -40,16 +40,17 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(43, 67);
+            this.label3.Location = new System.Drawing.Point(12, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 26);
+            this.label3.Size = new System.Drawing.Size(140, 26);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Lisance Key : ";
+            this.label3.Text = "Licence Key : ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(188, 65);
+            this.textBox3.Location = new System.Drawing.Point(177, 96);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(284, 28);
             this.textBox3.TabIndex = 4;
@@ -58,7 +59,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.checkBox1.Location = new System.Drawing.Point(48, 134);
+            this.checkBox1.Location = new System.Drawing.Point(223, 154);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(118, 23);
             this.checkBox1.TabIndex = 7;
@@ -78,7 +79,7 @@
             this.StartButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.StartButton.ForeColor = System.Drawing.Color.OrangeRed;
             this.StartButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.StartButton.Location = new System.Drawing.Point(260, 134);
+            this.StartButton.Location = new System.Drawing.Point(84, 201);
             this.StartButton.Name = "StartButton";
             this.StartButton.OnHoverBorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.StartButton.OnHoverButtonColor = System.Drawing.SystemColors.MenuHighlight;
@@ -103,14 +104,14 @@
             this.button_WOC1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.button_WOC1.ForeColor = System.Drawing.Color.OrangeRed;
             this.button_WOC1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button_WOC1.Location = new System.Drawing.Point(260, 204);
+            this.button_WOC1.Location = new System.Drawing.Point(352, 201);
             this.button_WOC1.Name = "button_WOC1";
             this.button_WOC1.OnHoverBorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.button_WOC1.OnHoverButtonColor = System.Drawing.SystemColors.MenuHighlight;
             this.button_WOC1.OnHoverTextColor = System.Drawing.Color.White;
-            this.button_WOC1.Size = new System.Drawing.Size(123, 39);
+            this.button_WOC1.Size = new System.Drawing.Size(140, 39);
             this.button_WOC1.TabIndex = 37;
-            this.button_WOC1.Text = "Buy Lisance";
+            this.button_WOC1.Text = "Buy Licence Key";
             this.button_WOC1.TextColor = System.Drawing.Color.White;
             this.button_WOC1.UseVisualStyleBackColor = false;
             this.button_WOC1.Click += new System.EventHandler(this.button_WOC1_Click);
@@ -129,7 +130,7 @@
             this.MaximizeBox = false;
             this.Name = "Form9";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Google Maps Scraper 4Vic              github.com/4Vic";
+            this.Text = "Reppz\'s Map Scraper             Github.com/Reppz";
             this.Load += new System.EventHandler(this.Form9_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
