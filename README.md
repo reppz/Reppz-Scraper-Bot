@@ -6,11 +6,23 @@ This program scrapes all the information on Google Maps using Selenium.
 This is a revised version of the Google Scraper Bot from 4Vic.
 
 Fixes:
-Updated multiple Nuget Packages.
-Added support for latest version of Chrome.
-Fixed an error where the bot would close Chrome instantly.
-Fixed an error where the bot couldn't select the Google maps search element.
-Updated code for latest ChromeDriver.
+- Updated multiple Nuget Packages.
+- Added support for latest version of Chrome.
+- Fixed an error where the bot would close Chrome instantly.
+- Fixed an error where the bot couldn't select the Google maps search element.
+- Updated code for latest ChromeDriver.
+- Fixed Broken English
+- Updated Licence Design
+
+Changelog:
+- Updated some CSS selectors to Xpath for accuracy
+
+
+TODO:
+- Fix Google scraping
+- Update the overall design
+- implement correct storing of data to the bot
+- Fix Show/hide button
 
 
 Scraping List
