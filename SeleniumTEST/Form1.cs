@@ -53,7 +53,8 @@ namespace SeleniumTEST
             elementim.SendKeys(search_box_text.Text);
             IWebElement searchButton = driver.FindElement(By.Id("searchbox-searchbutton"));
             searchButton.Click();
-            IWebElement ilkParagraf = driver.FindElement(By.ClassName("TFQHme "));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div")));
+            IWebElement ilkParagraf = driver.FindElement(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div"));
             ilkParagraf.Click();
 
         // SEARCHED RESULTS CODE HERE. IT WILL OPEN THEM ONE BY ONE IN A NEW TAB AND EXTRACT INFORMATION
@@ -256,13 +257,13 @@ namespace SeleniumTEST
             catch (NoSuchElementException)
             {
 
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.ClassName("xoLGzf-icon")));
-                IWebElement backButton = driver.FindElement(By.ClassName("xoLGzf-icon"));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"searchbox\"]/div[2]/button")));
+                IWebElement backButton = driver.FindElement(By.XPath("//*[@id=\"searchbox\"]/div[2]/button"));
                 backButton.Click();      
                 try
                 {
-                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#ppdPk-Ej1Yeb-LgbsSe-tJiF1e")));
-                    IWebElement nextPage = driver.FindElement(By.CssSelector("#ppdPk-Ej1Yeb-LgbsSe-tJiF1e"));
+                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div")));
+                    IWebElement nextPage = driver.FindElement(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div"));
                     nextPage.Click();
                 }
                 catch (Exception)
