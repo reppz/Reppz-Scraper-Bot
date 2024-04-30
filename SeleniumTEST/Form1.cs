@@ -93,38 +93,43 @@ namespace SeleniumTEST
                 label3.Text = companycounter.ToString();
 
             }
-            catch (Exception)
+            catch (Exception ex)
+           
             {
                 AddCommand.Parameters.AddWithValue("@CompanyName", "ŞİRKET ADI YOK");
                   AddCommand2.Parameters.AddWithValue("@CompanyName", "ŞİRKET ADI YOK");
+                Console.WriteLine("Failed to find Company Name: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement adres = driver.FindElement(By.ClassName("rogA2c "));
+                IWebElement adres = driver.FindElement(By.ClassName("AeaXub"));
                 AddCommand.Parameters.AddWithValue("@Adress", adres.Text);
                   AddCommand2.Parameters.AddWithValue("@Adress", adres.Text);
+                
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@Adress", "Adres bulunamadı");
                    AddCommand2.Parameters.AddWithValue("@Adress", "Adres bulunamadı");
+                Console.WriteLine("Failed to find Address Name: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement hours = driver.FindElement(By.ClassName("y0skZc"));
+                IWebElement hours = driver.FindElement(By.ClassName("G8aQO"));
                 AddCommand.Parameters.AddWithValue("@WorkingHours", hours.Text);
                     AddCommand2.Parameters.AddWithValue("@WorkingHours", hours.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@WorkingHours", "YOK");
                     AddCommand2.Parameters.AddWithValue("@WorkingHours", "YOK");
+                Console.WriteLine("Failed to find Working Hours: " + ex.Message);
             }
             try
             {
@@ -133,24 +138,28 @@ namespace SeleniumTEST
                     AddCommand2.Parameters.AddWithValue("@Website", website.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@Website", "WEB SİTESİ YOK");
                   AddCommand2.Parameters.AddWithValue("@Website", "WEB SİTESİ YOK");
+                Console.WriteLine("Failed to find Website: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement phone = driver.FindElement(By.CssSelector("[data-tooltip = 'Telefon numarasını kopyala']"));
+                IWebElement phone = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div:nth-child(9) > div:nth-child(6) > button > div > div.rogA2c > div.Io6YTe.fontBodyMedium.kR99db"));
                 AddCommand.Parameters.AddWithValue("@PhoneNumber", phone.Text);
                     AddCommand2.Parameters.AddWithValue("@PhoneNumber", phone.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@PhoneNumber", "Telefon YOK");
-                 AddCommand2.Parameters.AddWithValue("@PhoneNumber", "Telefon YOK");
+                 AddCommand2.Parameters.AddWithValue("@PhoneNumber", "Telefon YOK");   
+                Console.WriteLine("Failed to find Phone Number: " + ex.Message);
+                    
+                    
 
             }
             try
@@ -180,53 +189,57 @@ namespace SeleniumTEST
                   AddCommand2.Parameters.AddWithValue("@Country", yaziyim2.TrimStart());
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@PlusCode", "Plus Code Yok");
                     AddCommand2.Parameters.AddWithValue("@PlusCode", "Plus Code Yok");
+                Console.WriteLine("Failed to find Plus Code: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement comments = driver.FindElement(By.CssSelector("#pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div.x3AX1-LfntMc-header-title > div.x3AX1-LfntMc-header-title-ma6Yeb-haAclf > div.x3AX1-LfntMc-header-title-ij8cu > div.x3AX1-LfntMc-header-title-ij8cu-haAclf > div > div.gm2-body-2.h0ySl-wcwwM-RWgCYc > span:nth-child(3) > span > span > span.OAO0-ZEhYpd-vJ7A6b.OAO0-ZEhYpd-vJ7A6b-qnnXGd > span:nth-child(1) > button"));
+                IWebElement comments = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div.fontBodyMedium.dmRWX > div.F7nice > span:nth-child(2) > span > span"));
                 AddCommand.Parameters.AddWithValue("@Comment", comments.Text);
                 AddCommand2.Parameters.AddWithValue("@Comment", comments.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 AddCommand.Parameters.AddWithValue("@Comment", "Bulunamadı");
                 AddCommand2.Parameters.AddWithValue("@Comment", "Bulunamadı");
+                Console.WriteLine("Failed to find Comment: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement stars = driver.FindElement(By.ClassName("aMPvhf-fI6EEc-KVuj8d"));
+                IWebElement stars = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div.fontBodyMedium.dmRWX > div.F7nice > span:nth-child(1) > span:nth-child(1)"));
                 AddCommand.Parameters.AddWithValue("@Stars", stars.Text);
                 AddCommand2.Parameters.AddWithValue("@Stars", stars.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                AddCommand.Parameters.AddWithValue("@Stars", "Yıldız yok");
-                AddCommand2.Parameters.AddWithValue("@Stars", "Yıldız yok");
+                AddCommand.Parameters.AddWithValue("@Stars", "No Stars");
+                AddCommand2.Parameters.AddWithValue("@Stars", "No Stars");
+                    Console.WriteLine("Failed to find Stars: " + ex.Message);
 
             }
             try
             {
 
-                IWebElement category = driver.FindElement(By.CssSelector("#pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div.x3AX1-LfntMc-header-title > div.x3AX1-LfntMc-header-title-ma6Yeb-haAclf > div.x3AX1-LfntMc-header-title-ij8cu > div.x3AX1-LfntMc-header-title-ij8cu-haAclf > div > div:nth-child(2) > span.h0ySl-wcwwM-E70qVe > span:nth-child(1) > button"));
+                IWebElement category = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div:nth-child(2) > span > span > button"));
                 AddCommand.Parameters.AddWithValue("@Category", category.Text);            
                 AddCommand2.Parameters.AddWithValue("@Category", category.Text);
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                AddCommand.Parameters.AddWithValue("@Category", "Kategori bulunamadı");
-                AddCommand2.Parameters.AddWithValue("@Category", "Kategori bulunamadı");
+                AddCommand.Parameters.AddWithValue("@Category", "Category not found");
+                AddCommand2.Parameters.AddWithValue("@Category", "Category not found");
+                Console.WriteLine("Failed to find Category: " + ex.Message);
 
             }
             try
@@ -244,7 +257,7 @@ namespace SeleniumTEST
             }
             try
             {
-                // YANDAKİ FİRMAYA GEÇİŞ YAPAR
+                // SWITCH TO NEXT COMPANY
               
                 IWebElement childOk = driver.FindElement(By.CssSelector("#sGi9mc-m5SR9c-bottom-pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div > div.xtu1r-K9a4Re-XuHpsb-haAclf > div.xtu1r-K9a4Re-ibnC6b-haAclf > div:nth-child(" + artir + ")"));
                                                                           
@@ -274,7 +287,7 @@ namespace SeleniumTEST
                 try
                 {
                     Thread.Sleep(4000);   
-                    driver.FindElement(By.ClassName("a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd")).Click(); // ilk çıkan firma
+                    driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(3) > div")).Click(); // First Company
                     artir = 2;
                     goto TumVeriler;
 
