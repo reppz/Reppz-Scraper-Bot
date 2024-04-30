@@ -83,8 +83,8 @@ namespace SeleniumTEST
 
             try
             {
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div.x3AX1-LfntMc-header-title > div.x3AX1-LfntMc-header-title-ma6Yeb-haAclf > div.x3AX1-LfntMc-header-title-ij8cu > div:nth-child(1) > h1 > span:nth-child(1)")));
-                IWebElement companyName = driver.FindElement(By.CssSelector("#pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div.x3AX1-LfntMc-header-title > div.x3AX1-LfntMc-header-title-ma6Yeb-haAclf > div.x3AX1-LfntMc-header-title-ij8cu > div:nth-child(1) > h1 > span:nth-child(1)"));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.Hu9e2e.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf > div.TIHn2 > div > div.lMbq3e > div:nth-child(1) > h1 > span.a5H0ec")));
+                IWebElement companyName = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.Hu9e2e.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf > div.TIHn2 > div > div.lMbq3e > div:nth-child(1) > h1 > span.a5H0ec"));
                 
                 AddCommand.Parameters.AddWithValue("@CompanyName", companyName.Text);
                     AddCommand2.Parameters.AddWithValue("@CompanyName", companyName.Text);
@@ -102,7 +102,7 @@ namespace SeleniumTEST
             try
             {
 
-                IWebElement adres = driver.FindElement(By.ClassName("rogA2c"));
+                IWebElement adres = driver.FindElement(By.ClassName("rogA2c "));
                 AddCommand.Parameters.AddWithValue("@Adress", adres.Text);
                   AddCommand2.Parameters.AddWithValue("@Adress", adres.Text);
 
@@ -116,7 +116,7 @@ namespace SeleniumTEST
             try
             {
 
-                IWebElement hours = driver.FindElement(By.ClassName("N9eQWb-text"));
+                IWebElement hours = driver.FindElement(By.ClassName("y0skZc"));
                 AddCommand.Parameters.AddWithValue("@WorkingHours", hours.Text);
                     AddCommand2.Parameters.AddWithValue("@WorkingHours", hours.Text);
 
@@ -257,9 +257,10 @@ namespace SeleniumTEST
             catch (NoSuchElementException)
             {
 
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"searchbox\"]/div[2]/button")));
-                IWebElement backButton = driver.FindElement(By.XPath("//*[@id=\"searchbox\"]/div[2]/button"));
-                backButton.Click();      
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.ClassName("xoLGzf")));
+                IWebElement backButton = driver.FindElement(By.ClassName("xoLGzf"));
+                searchButton.Click();      
+                
                 try
                 {
                     wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div")));
