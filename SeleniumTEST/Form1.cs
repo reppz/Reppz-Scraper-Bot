@@ -394,6 +394,16 @@ namespace SeleniumTEST
         }
         private void ShowHideButton_Click(object sender, EventArgs e)
         {
+            if (driver == null)
+            {
+                var chromeDriverService = ChromeDriverService.CreateDefaultService();
+                chromeDriverService.HideCommandPromptWindow = true;
+                Control.CheckForIllegalCrossThreadCalls = false;
+                driver = new ChromeDriver(chromeDriverService);
+                driver.Manage().Window.Size = new Size(800, 800);
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            }
+
             if (sayimiz == 0)
             {
                 driver.Manage().Window.Minimize();
