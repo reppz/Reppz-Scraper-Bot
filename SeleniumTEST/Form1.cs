@@ -46,7 +46,7 @@ namespace SeleniumTEST
 
         enbas:
 
-            int artir = 2;   
+            int increase = 2;   
             driver.Navigate().GoToUrl("https://www.google.com/maps/");
           wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"searchboxinput\"]")));
             IWebElement elementim = driver.FindElement(By.XPath("//*[@id=\"searchboxinput\"]"));
@@ -58,7 +58,7 @@ namespace SeleniumTEST
             ilkParagraf.Click();
 
         // SEARCHED RESULTS CODE HERE. IT WILL OPEN THEM ONE BY ONE IN A NEW TAB AND EXTRACT INFORMATION
-            artir = 2;
+            increase = 2;
           TumVeriler:
             // SQLITE CONNEXION
             string conn = @"Data Source=company_data.db;Version=3;New=False";
@@ -83,8 +83,8 @@ namespace SeleniumTEST
 
             try
             {
-                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.Hu9e2e.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf > div.TIHn2 > div > div.lMbq3e > div:nth-child(1) > h1 > span.a5H0ec")));
-                IWebElement companyName = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div:nth-child(1)"));
+                wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.ClassName("DUwDvf")));
+                IWebElement companyName = driver.FindElement(By.ClassName("DUwDvf"));
 
                 AddCommand.Parameters.AddWithValue("@CompanyName", companyName.Text);
                     AddCommand2.Parameters.AddWithValue("@CompanyName", companyName.Text);
@@ -148,7 +148,7 @@ namespace SeleniumTEST
             try
             {
 
-                IWebElement phone = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div:nth-child(9) > div:nth-child(6) > button > div > div.rogA2c > div.Io6YTe.fontBodyMedium.kR99db"));
+                IWebElement phone = driver.FindElement(By.ClassName("rogA2c"));
                 AddCommand.Parameters.AddWithValue("@PhoneNumber", phone.Text);
                     AddCommand2.Parameters.AddWithValue("@PhoneNumber", phone.Text);
 
@@ -199,7 +199,7 @@ namespace SeleniumTEST
             try
             {
 
-                IWebElement comments = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div.fontBodyMedium.dmRWX > div.F7nice > span:nth-child(2) > span > span"));
+                IWebElement comments = driver.FindElement(By.ClassName("F7nice"));
                 AddCommand.Parameters.AddWithValue("@Comment", comments.Text);
                 AddCommand2.Parameters.AddWithValue("@Comment", comments.Text);
 
@@ -230,7 +230,7 @@ namespace SeleniumTEST
             try
             {
 
-                IWebElement category = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div:nth-child(2) > span > span > button"));
+                IWebElement category = driver.FindElement(By.ClassName("DkEaL"));
                 AddCommand.Parameters.AddWithValue("@Category", category.Text);            
                 AddCommand2.Parameters.AddWithValue("@Category", category.Text);
 
@@ -258,12 +258,12 @@ namespace SeleniumTEST
             try
             {
                 // SWITCH TO NEXT COMPANY
-              
-                IWebElement childOk = driver.FindElement(By.CssSelector("#sGi9mc-m5SR9c-bottom-pane > div > div.Yr7JMd-pane-content.cYB2Ge-oHo7ed > div > div > div > div.xtu1r-K9a4Re-XuHpsb-haAclf > div.xtu1r-K9a4Re-ibnC6b-haAclf > div:nth-child(" + artir + ")"));
-                                                                          
-                artir += 1;        
+
+                IWebElement childOk = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(" + increase + ")"));
+
+                increase += 2;
                 childOk.Click();
-                Thread.Sleep(2000);  
+                Thread.Sleep(2000);
                 goto TumVeriler;
 
             }
@@ -272,12 +272,11 @@ namespace SeleniumTEST
 
                 wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.ClassName("xoLGzf")));
                 IWebElement backButton = driver.FindElement(By.ClassName("xoLGzf"));
-                searchButton.Click();      
-                
+                searchButton.Click();
                 try
                 {
-                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div")));
-                    IWebElement nextPage = driver.FindElement(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div"));
+                    wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(5)")));
+                    IWebElement nextPage = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(5)"));
                     nextPage.Click();
                 }
                 catch (Exception)
@@ -286,9 +285,9 @@ namespace SeleniumTEST
                 }
                 try
                 {
-                    Thread.Sleep(4000);   
-                    driver.FindElement(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[7]/div/a")).Click(); // First Company
-                    artir = 2;
+                    Thread.Sleep(4000);
+                    driver.FindElement(By.ClassName("a4gq8e-aVTXAb-haAclf-jRmmHf-hSRGPd")).Click(); // ilk çıkan firma
+                    increase = 2;
                     goto TumVeriler;
 
                 }
