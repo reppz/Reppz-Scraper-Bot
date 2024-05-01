@@ -84,8 +84,8 @@ namespace SeleniumTEST
             try
             {
                 wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.Hu9e2e.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf > div.TIHn2 > div > div.lMbq3e > div:nth-child(1) > h1 > span.a5H0ec")));
-                IWebElement companyName = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.Hu9e2e.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf > div.TIHn2 > div > div.lMbq3e > div:nth-child(1) > h1 > span.a5H0ec"));
-                
+                IWebElement companyName = driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div:nth-child(1)"));
+
                 AddCommand.Parameters.AddWithValue("@CompanyName", companyName.Text);
                     AddCommand2.Parameters.AddWithValue("@CompanyName", companyName.Text);
               
@@ -164,7 +164,7 @@ namespace SeleniumTEST
             }
             try
             {
-                IWebElement plusCode = driver.FindElement(By.CssSelector("[data-item-id= 'oloc']"));
+                IWebElement plusCode = driver.FindElement(By.ClassName("rogA2c"));
                 AddCommand.Parameters.AddWithValue("@PlusCode", plusCode.Text);
                   AddCommand2.Parameters.AddWithValue("@PlusCode", plusCode.Text);
 
@@ -287,7 +287,7 @@ namespace SeleniumTEST
                 try
                 {
                     Thread.Sleep(4000);   
-                    driver.FindElement(By.CssSelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(3) > div")).Click(); // First Company
+                    driver.FindElement(By.XPath("//*[@id=\"QA0Szd\"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[7]/div/a")).Click(); // First Company
                     artir = 2;
                     goto TumVeriler;
 
